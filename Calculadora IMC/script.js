@@ -25,13 +25,13 @@ function calcularIMC() {
         imagemSrc = "sobrepeso.jpg";
     } else if (imc >= 30 && imc < 34.9) {
         classificacao = "Obesidade grau I";
-        imagemSrc = "gordo1.jpg";
+        imagemSrc = "obesidade1.jpg";
     } else if (imc >= 35 && imc < 39.9) {
         classificacao = "Obesidade grau II (severa)";
-        imagemSrc = "gordo2.jpg";
+        imagemSrc = "obesidade2.jpg";
     } else {
         classificacao = "Obesidade grau III (mórbida)";
-        imagemSrc = "gordo3.jpg";
+        imagemSrc = "obesidade3.jpg";
     }
 
     resultado.innerHTML = `Seu IMC é <strong>${imc.toFixed(2)}</strong> - ${classificacao}`;
